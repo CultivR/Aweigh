@@ -14,20 +14,20 @@ public struct KeyboardInfo {
     }
     
     public var duration: TimeInterval {
-        return userInfo[UIKeyboardAnimationDurationUserInfoKey] as! TimeInterval
+        return userInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
     }
     
-    public var animationOptions: UIViewAnimationOptions {
-        let curve = userInfo[UIKeyboardAnimationCurveUserInfoKey] as! UInt
-        return UIViewAnimationOptions(rawValue: curve << 16)
+    public var animationOptions: UIView.AnimationOptions {
+        let curve = userInfo[UIResponder.keyboardAnimationCurveUserInfoKey] as! UInt
+        return UIView.AnimationOptions(rawValue: curve << 16)
     }
     
     public var startFrame: CGRect {
-        return (userInfo[UIKeyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
+        return (userInfo[UIResponder.keyboardFrameBeginUserInfoKey] as! NSValue).cgRectValue
     }
     
     public var endFrame: CGRect {
-        return (userInfo[UIKeyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
+        return (userInfo[UIResponder.keyboardFrameEndUserInfoKey] as! NSValue).cgRectValue
     }
 }
 
@@ -38,10 +38,10 @@ public struct KeyboardInfo {
 
 public extension KeyboardObserving {
     func addKeyboardObservers() {
-        for name: Notification.Name in [.UIKeyboardWillShow, .UIKeyboardWillHide] {
+        for name: Notification.Name in [UIResponder.keyboardWillShowNotification, UIResponder.keyboardWillHideNotification] {
             NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAnimate), name: name, object: nil)
         }
-        for name: Notification.Name in [.UIKeyboardDidShow, .UIKeyboardDidHide] {
+        for name: Notification.Name in [UIResponder.keyboardDidShowNotification, UIResponder.keyboardDidHideNotification] {
             NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidAnimate), name: name, object: nil)
         }
     }

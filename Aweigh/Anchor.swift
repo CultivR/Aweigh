@@ -22,7 +22,7 @@ public extension Anchoring {
         return true
     }
 
-    mutating func animateAnchoredViews(using info: KeyboardInfo, adjusting views: [UIView]? = nil) {
+    func animateAnchoredViews(using info: KeyboardInfo, adjusting views: [UIView]? = nil) {
         guard shouldAnimateKeyboard else { return }
         
         let distance = info.endFrame.minY - info.startFrame.minY
