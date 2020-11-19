@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		175489892052234400B0F59A /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 175489882052234400B0F59A /* Keyboard.swift */; };
 		1754898B2052239100B0F59A /* StatusBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754898A2052239100B0F59A /* StatusBar.swift */; };
+		1754898D205223B200B0F59A /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1754898C205223B100B0F59A /* Anchor.swift */; };
 		17C5EF69203F63E40084B5E1 /* Aweigh.h in Headers */ = {isa = PBXBuildFile; fileRef = 17C5EF67203F63E40084B5E1 /* Aweigh.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		55199D62217F961C00F1F18E /* Anchor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55199D61217F961C00F1F18E /* Anchor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		175489882052234400B0F59A /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		1754898A2052239100B0F59A /* StatusBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBar.swift; sourceTree = "<group>"; };
+		1754898C205223B100B0F59A /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
 		17C5EF64203F63E40084B5E1 /* Aweigh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Aweigh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		17C5EF67203F63E40084B5E1 /* Aweigh.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Aweigh.h; sourceTree = "<group>"; };
 		17C5EF68203F63E40084B5E1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		55199D61217F961C00F1F18E /* Anchor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Anchor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,7 +53,7 @@
 			isa = PBXGroup;
 			children = (
 				17C5EF67203F63E40084B5E1 /* Aweigh.h */,
-				55199D61217F961C00F1F18E /* Anchor.swift */,
+				1754898C205223B100B0F59A /* Anchor.swift */,
 				175489882052234400B0F59A /* Keyboard.swift */,
 				1754898A2052239100B0F59A /* StatusBar.swift */,
 				17C5EF68203F63E40084B5E1 /* Info.plist */,
@@ -99,12 +99,12 @@
 		17C5EF5B203F63E40084B5E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1020;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "Jordan Kay";
 				TargetAttributes = {
 					17C5EF63203F63E40084B5E1 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1020;
+						LastSwiftMigration = 0920;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -115,7 +115,6 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
 			mainGroup = 17C5EF5A203F63E40084B5E1;
 			productRefGroup = 17C5EF65203F63E40084B5E1 /* Products */;
@@ -143,7 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				175489892052234400B0F59A /* Keyboard.swift in Sources */,
-				55199D62217F961C00F1F18E /* Anchor.swift in Sources */,
+				1754898D205223B200B0F59A /* Anchor.swift in Sources */,
 				1754898B2052239100B0F59A /* StatusBar.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -165,7 +164,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -173,7 +171,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -227,7 +224,6 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -235,7 +231,6 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;

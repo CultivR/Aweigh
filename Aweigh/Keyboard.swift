@@ -33,16 +33,12 @@ public struct KeyboardInfo {
 
 @objc public protocol KeyboardObserving {
     func keyboardWillAnimate(notification: Notification)
-    func keyboardDidAnimate(notification: Notification)
 }
 
 public extension KeyboardObserving {
     func addKeyboardObservers() {
         for name: Notification.Name in [UIResponder.keyboardWillShowNotification, UIResponder.keyboardWillHideNotification] {
             NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillAnimate), name: name, object: nil)
-        }
-        for name: Notification.Name in [UIResponder.keyboardDidShowNotification, UIResponder.keyboardDidHideNotification] {
-            NotificationCenter.default.addObserver(self, selector: #selector(keyboardDidAnimate), name: name, object: nil)
         }
     }
 }

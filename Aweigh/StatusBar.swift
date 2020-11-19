@@ -9,7 +9,3 @@
 public var statusBarHeight: CGFloat {
     return UIApplication.shared.statusBarFrame.height
 }
-
-public var defaultStatusBarHeight: CGFloat {
-    return (statusBarHeight == 40) ? 20 : statusBarHeight
-}
